@@ -1,15 +1,23 @@
 package fintech.driver;
 
+import java.util.Scanner;
+
+import fintech.model.Account;
+
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S23025-Alif Aflah Suedi
+ * @author 12S23039-Prisca R. Manurung
  */
 public class Driver1 {
-
-    public static void main(String[] _args) {
-
-        // codes
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String command = scanner.nextLine();
+        String owner = scanner.nextLine();
+        String accountName = scanner.nextLine();
+        Account account = new Account(command, owner, accountName);
+    
+        System.out.println(account.toString());
+    
+        scanner.close();
     }
-
 }
