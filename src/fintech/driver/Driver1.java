@@ -1,23 +1,22 @@
 package fintech.driver;
 
+import fintech.model.Account;
 import java.util.Scanner;
 
-import fintech.model.Account;
-
-/**
- * @author 12S23025-Alif Aflah Suedi
- * @author 12S23039-Prisca R. Manurung
- */
 public class Driver1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String command = scanner.nextLine();
         String owner = scanner.nextLine();
         String accountName = scanner.nextLine();
-        Account account = new Account(command, owner, accountName);
-    
-        System.out.println(account.toString());
-    
+
+        if ("create-account".equals(command)) {
+            Account account = new Account(command, owner, accountName);
+            System.out.println(account.toString());
+        } else {
+            System.out.println("Invalid command");
+        }
+
         scanner.close();
     }
 }

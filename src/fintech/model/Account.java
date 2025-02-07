@@ -1,20 +1,9 @@
 package fintech.model;
 
-/**
-* @author 12S23025-Alif Aflah Suedi
- * @author 12S23039-Prisca R. Manurung
- */
 public class Account {
     private final String owner;
     private final String accountName;
     private final double balance;
-
-    // Existing constructor
-    public Account(String owner, String accountName, double balance) {
-        this.owner = owner;
-        this.accountName = accountName;
-        this.balance = balance;
-    }
 
     // New constructor
     public Account(String command, String owner, String accountName) {
@@ -25,11 +14,8 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{" +
-                "owner='" + owner + '\'' +
-                ", accountName='" + accountName + '\'' +
-                ", balance=" + balance +
-                '}';
+        return owner + "|" + accountName + "|" + balance;
     }
 
+    // Getters and other methods...
 }
