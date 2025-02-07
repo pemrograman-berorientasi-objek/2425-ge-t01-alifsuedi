@@ -42,7 +42,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return owner + "|" + accountName + "|" + balance;
+        return accountName + "|" + owner + "|" + balance;
     }
 
 }
