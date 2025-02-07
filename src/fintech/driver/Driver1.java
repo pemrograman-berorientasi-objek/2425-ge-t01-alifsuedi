@@ -5,8 +5,8 @@ import java.util.Scanner;
 import fintech.model.Account;
 
 /**
- * @author NIM Nama
- * @author NIM Nama
+ * @author 12S23025-Alif Aflah Suedi
+ * @author 12S23039-Prisca R. Manurung
  */
 
  public class Driver1 {
